@@ -1,0 +1,200 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Serif Pro", serif; 
+    background-color: #FFFDF6; 
+    font-size: 18px; 
+}
+
+header {
+    text-align: center;
+    position: relative;
+    height: 300px;
+
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    background-color: #FFAB2D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.left-menu, .right-menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex: 1; 
+    
+ 
+}
+
+.left-menu a, .right-menu a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.left-menu a:hover, .right-menu a:hover {
+    text-decoration: underline;
+}
+
+.center-logo {
+    display: flex;
+    align-items: center; 
+    z-index: 2; 
+}
+
+.center-logo img {
+    max-width: 400px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFDF6;
+   
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "Source Serif Pro", serif; 
+    font-weight: bold; 
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Source Serif Pro", serif; 
+    font-size: 40px; 
+    margin-bottom: 10px;
+}
+
+.trending-section {
+    margin-top: 20px;
+}
+
+.trending-section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.recipe-and-poll {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.recipe {
+    flex: 1;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.recipe img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+.poll {
+    flex: 1;
+    text-align: center;
+}
+
+.poll img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.poll h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.poll form {
+    text-align: left;
+}
+
+.poll label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.poll input[type="radio"] {
+    margin-right: 5px;
+}
+
+.poll button {
+    background-color: #FFAB2D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
