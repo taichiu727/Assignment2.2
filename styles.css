@@ -3,6 +3,10 @@ body, h1, h2, p, ul, li {
     padding: 0;
 }
 
+h1, h2, h3 {
+    color: #4F000B;
+}
+
 body {
     font-family: "Source Serif Pro", serif; 
     background-color: #FFFDF6; 
@@ -126,6 +130,18 @@ h2 {
     margin-bottom: 10px;
 }
 
+#trending-header {
+    text-align: center;
+}
+
+.trending-content {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column; /* Stack child elements vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
 .trending-section {
     margin-top: 20px;
 }
@@ -135,16 +151,36 @@ h2 {
     margin-bottom: 10px;
 }
 
-.recipe-and-poll {
+
+
+.recipe-container {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 20px; /* Add spacing between sections */
+    flex-wrap: wrap; /* Allow recipes to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    align-items: flex-start; /* Center items vertically */
+    margin-bottom: 20px; 
+    
 }
 
 .recipe {
     flex: 1;
     text-align: center;
+    margin: 10px;
+    box-sizing: border-box; 
+}
+
+.trending-section {
+    margin-top: 20px;
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.trending-recipe {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box; 
     margin-right: 20px;
 }
 
@@ -154,7 +190,14 @@ h2 {
     margin: 10px 0;
 }
 
+.trending-recipe img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
 .poll {
+ 
     flex: 1;
     text-align: center;
 }

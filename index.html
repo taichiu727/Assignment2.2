@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Tale</title>
+    <title>Tasty Tales</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,74 +25,93 @@
             <li><a href="#">Anime</a></li>
             <li><a href="#">Community</a></li>
             <li class="search-bar">
-                <input type="text" placeholder="Search">
+                <input type="text" placeholder="What are you craving?">
             </li>
         </ul>
     </nav>
     <main>
         <section class="trending-section">
-            <h2>What's Trending</h2>
-            <div class="recipe-and-poll">
-                <div class="recipe">
-                    <img src="recipe1.jpg" alt="Recipe 1">
-                    <p>Recipe Name 1</p>
+            <div class="trending-content">
+                <div id = "trending-header"> 
+                    <h2>What's Trending</h2>
                 </div>
-                <div class="poll">
-                    <img src="poll-image.jpg" alt="Poll Image">
-                    <h3>Poll Question</h3>
-                    <form>
-                        <label>
-                            <input type="radio" name="poll-option" value="option1">
-                            Option 1
-                        </label>
-                        <label>
-                            <input type="radio" name="poll-option" value="option2">
-                            Option 2
-                        </label>
-                        <!-- Add more poll options as needed -->
-                        <button type="submit">Vote</button>
-                    </form>
+                <div class="trending-images">
+                    <div class="recipe-container">
+                        <div class="trending-recipe">
+                            <img src="trending-recipe1.png" alt="Recipe 1">
+                            <p>Japanese Curry</p>
+                        </div>
+                        <div class="trending-recipe">
+                            <img src="trending-recipe2.png" alt="Recipe 2">
+                            <p>Oden</p>
+                        </div>
+                        <div class="trending-recipe">
+                            <img src="trending-recipe3.png" alt="Recipe 3">
+                            <p>Omurice</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+        </div>
+        <div class="poll">
+                    
+            <h3>Weekly Community Poll</h3>
+            <p>Will Hunter x Hunter every come back?</p>
+            <img src="poll-image.png" alt="Poll Image">
+            <form>
+                <label>
+                    <input type="radio" name="poll-option" value="Yes I believe!">
+                    Option 1
+                </label>
+                <label>
+                    <input type="radio" name="poll-option" value="No, give up already...">
+                    Option 2
+                </label>
+                <!-- Add more poll options as needed -->
+                <button type="submit">Vote</button>
+            </form>
+        </div>
         </section>
 
         <section class="new-recipes">
             <h2>New Recipes</h2>
-            <div class="recipe">
-                <img src="recipe1.jpg" alt="Recipe 1">
-                <p>Recipe Name 1</p>
+                <div class="recipe-container">
+                <div class="recipe">
+                    <img src="new-recipe1.png" alt="Recipe 1">
+                    <p>Katsudon</p>
+                </div>
+                <div class="recipe">
+                    <img src="new-recipe2.png" alt="Recipe 2">
+                    <p>Rice Noodle Sakuga</p>
+                </div>
             </div>
-            <div class="recipe">
-                <img src="recipe2.jpg" alt="Recipe 2">
-                <p>Recipe Name 2</p>
-            </div>
-          
         </section>
 
         <section class="seasonal-recipes">
             <h2>Seasonal Recipes</h2>
-            <div class="recipe">
-                <img src="recipe3.jpg" alt="Recipe 3">
-                <p>Recipe Name 3</p>
+            <div class="recipe-container">
+                <div class="recipe">
+                    <img src="seasonal-recipe1.png" alt="Recipe 3">
+                    <p>Ham Ramen</p>
+                </div>
+                <div class="recipe">
+                    <img src="seasonal-recipe2.png" alt="Recipe 4">
+                    <p>Tamago Kake Gohan</p>
+                </div>
             </div>
-            <div class="recipe">
-                <img src="recipe4.jpg" alt="Recipe 4">
-                <p>Recipe Name 4</p>
-            </div>
-           
         </section>
 
         <section class="tasty-tales">
             <h2>Tasty Tales</h2>
-            <div class="recipe">
-                <img src="recipe5.jpg" alt="Recipe 5">
-                <p>Recipe Name 5</p>
+            <div class="recipe-container">
+                <div class="recipe">
+                    <img src="tasty-treats1.png" alt="Recipe 5">
+                    <p>Peach Buns</p>
+                </div>
+                <div class="recipe">
+                    <img src="tasty-treats2.png" alt="Recipe 6">
+                    <p>Takoyaki</p>
+                </div>
             </div>
-            <div class="recipe">
-                <img src="recipe6.jpg" alt="Recipe 6">
-                <p>Recipe Name 6</p>
-            </div>
-          
         </section>
 
         <section class="newsletter">
@@ -106,7 +125,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Tasty Tale</p>
+        <p>&copy; 2023 Tasty Tales</p>
     </footer>
 </body>
 </html>
