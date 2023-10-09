@@ -1,131 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Tales</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <img src="header-image.png" alt="Header Image">
-        
-    </header>
-
-    <nav>
-        <ul class="left-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-        <div class="center-logo">
-            <img src="logo.png" alt="Logo">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tasty Tales</title>
+        <link rel="icon" href="fav.png"/>
+        <link rel="stylesheet" href="styles.css"/>
+        <script src="jquery-3.7.1.js"></script>		
+        <script src="fontawesome.js"></script>
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <div class="top-header">
+            <div class="container">
+            </div>
         </div>
-        <ul class="right-menu">
-            <li><a href="#">Anime</a></li>
-            <li><a href="#">Community</a></li>
-            <li class="search-bar">
-                <input type="text" placeholder="What are you craving?">
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section class="trending-section">
-            <div class="trending-content">
-                <div id = "trending-header"> 
-                    <h2>What's Trending</h2>
+        <header>
+            <div class="nav-calc-container">
+                <nav>
+                    <div class="menu-item">
+                        <ul class="left-menu">
+                            <li><a href="#">Home</a></li>
+                            <li class="drop_down">
+                                <a href="#">Recipes<img src="down-arrow.png" alt=""></a>
+                                <ul>
+                                    <li><a href="#">Latest</a></li>
+                                    <li><a href="#">Trending</a></li>
+                                    <li><a href="#">Seasonal</a></li>
+                                    <li><a href="#">Treats</a></li>
+                                    <li><a href="#">Drinks</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo">
+                        <a href="#"><img src="logo.png" class="img-fluid" alt="logo"></a>
+                    </div>
+                    <div class="menu-item">
+                        <ul class="right-menu">
+                            <li><a href="#">Anime</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li class="search-bar">
+                                <input type="text" placeholder="What are you craving?">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hamburger">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <div class="mobile-menu-area" style="display: block;">
+            <div class="container">
+                <div class="mobile-menu-item">
+                    <ul>
+                        <li><a href="#" id="m-active">Home</a></li>
+                        <li>
+                            <a href="#">Recipes <span><img src="down-arrow.png" class="img-fluid" alt=""></span></a>
+                            <ul class="sub-m-item">
+                                <li><a href="#">Latest</a></li>
+                                <li><a href="#">Trending</a></li>
+                                <li><a href="#">Seasonal</a></li>
+                                <li><a href="#">Treats</a></li>
+                                <li><a href="#">Drinks</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Anime</a>
+                        </li>
+                        <li>
+                            <a href="#">Community</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="trending-images">
-                    <div class="recipe-container">
-                        <div class="trending-recipe">
-                            <img src="trending-recipe1.png" alt="Recipe 1">
-                            <p>Japanese Curry</p>
+            </div>
+        </div>
+ 
+        <section class="trending-area">
+            <div class="container">
+                <div class="trending-wrapper">
+                    <div class="trending-left">
+                        <div id = "trending-header">
+                            <h2>What's Trending</h2>
                         </div>
-                        <div class="trending-recipe">
-                            <img src="trending-recipe2.png" alt="Recipe 2">
-                            <p>Oden</p>
+                        <div class="trending-left-item-inner">
+                            <div class="trending-left-img-item">
+                                <img src="trending-recipe1.png" class="img-fluid" alt="Recipe 1">
+                                <p>Japanese Curry</p>
+                                <h6>Japanese Curry</h6>
+                            </div>
+                            <div class="trending-left-img-item">
+                                <img src="trending-recipe2.png" class="img-fluid" alt="Recipe 2">
+                                <p>Oden</p>
+                                <h6>Oden</h6>
+                            </div>
+                            <div class="trending-left-img-item">
+                                <img src="trending-recipe3.png" class="img-fluid" alt="Recipe 3">
+                                <p>Omurice</p>
+                                <h6>Omurice</h6>
+                            </div>
                         </div>
-                        <div class="trending-recipe">
-                            <img src="trending-recipe3.png" alt="Recipe 3">
-                            <p>Omurice</p>
+                    </div>
+                    <div class="trending-right">
+                        <div class="poll">
+                            <h3>Weekly Community Poll</h3>
+                            <p>Will Hunter x Hunter ever come back?</p>
+                            <div class="poll-inner">
+                                <img src="poll-image.png" alt="Poll Image">
+                                <form>
+                                    <label class="labl">
+                                        <input type="radio" name="radioname" >
+                                        <div>Yes! I believe!</div>
+                                    </label>
+                                    <label class="labl">
+                                        <input type="radio" name="radioname" value="another" />
+                                        <div>No, give up already...</div>
+                                    </label>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-        </div>
-        <div class="poll">
-                    
-            <h3>Weekly Community Poll</h3>
-            <p>Will Hunter x Hunter every come back?</p>
-            <img src="poll-image.png" alt="Poll Image">
-            <form>
-                <label>
-                    <input type="radio" name="poll-option" value="Yes I believe!">
-                    Option 1
-                </label>
-                <label>
-                    <input type="radio" name="poll-option" value="No, give up already...">
-                    Option 2
-                </label>
-                <!-- Add more poll options as needed -->
-                <button type="submit">Vote</button>
-            </form>
-        </div>
+            </div>
         </section>
-
-        <section class="new-recipes">
-            <h2>New Recipes</h2>
-                <div class="recipe-container">
-                <div class="recipe">
-                    <img src="new-recipe1.png" alt="Recipe 1">
-                    <p>Katsudon</p>
+ 
+        <section class="new-recipes-area">
+            <div class="container">
+                <div class="new-rec-title">
+                    <h2>New Recipes</h2>
+                    <ul>
+                        <li>Updated September 26, 2023 PST</li>
+                        <li><a href="#">See More Recipes...</a></li>
+                    </ul>
                 </div>
-                <div class="recipe">
-                    <img src="new-recipe2.png" alt="Recipe 2">
-                    <p>Rice Noodle Sakuga</p>
+                <div class="new-recipe-wrapper">
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="new-recipe1.png" class="img-fluid" alt="Recipe 1">
+                            <span>EXCLUSIVE</span>
+                        </div>
+                        <h6>Katsudon</h6>
+                        <p>Yuri on Ice</p>
+                    </div>
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="new-recipe2.png" class="img-fluid" alt="Recipe 2">
+                        </div>
+                        <h6>Rice Noodle Sakuga</h6>
+                        <p>Flavors of Youth</p>
+                    </div>
+                </div>
+                <div class="new-rec-title2 ">
+                    <h2 class="newrct3">Seasonal Recipes</h2>
+                    <ul>
+                        <li class="newrct3l">Updated September 22, 2023 PST</li>
+                    </ul>
+                </div>
+                <div class="new-recipe-wrapper">
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="seasonal-recipe1.png" class="img-fluid" alt="Recipe 2">
+                            <span>EXCLUSIVE</span>
+                        </div>
+                        <h6>Ham Ramen</h6>
+                        <p>Ponyo</p>
+                    </div>
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="seasonal-recipe2.png" class="img-fluid" alt="Recipe 4">
+                        </div>
+                        <h6>Tamago Kake Gohan</h6>
+                        <p>Gin no Saji</p>
+                    </div>
+                </div>
+                <div class="new-rec-title2 ">
+                    <h2 class="newrct3">Tasty Treats</h2>
+                    <ul>
+                        <li class="newrct3l">Updated September 15, 2023 PST</li>
+                    </ul>
+                </div>
+                <div class="new-recipe-wrapper">
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="tasty-treats1.png" class="img-fluid" alt="Recipe 2">
+                        </div>
+                        <h6>Peach Buns</h6>
+                        <p>Spirited Away</p>
+                    </div>
+                    <div class="new-recipe-items">
+                        <div class="new-recipe-img">
+                            <img src="tasty-treats2.png" class="img-fluid" alt="Recipe 4">
+                        </div>
+                        <h6>Takoyaki</h6>
+                        <p>Modest Heroes</p>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <section class="seasonal-recipes">
-            <h2>Seasonal Recipes</h2>
-            <div class="recipe-container">
-                <div class="recipe">
-                    <img src="seasonal-recipe1.png" alt="Recipe 3">
-                    <p>Ham Ramen</p>
+    
+        <footer>
+            <div class="footer-container">
+                <div class="footer-wrapper">
+                    <div class="footer-lef-col">
+                        <div class="footer-left-item">
+                            <div class="f-logo">
+                                <a href="#"><img src="logo.png" alt=""></a>
+                            </div>
+                            <h2>Newsletter</h2>
+                            <p><a href="#">Sign up</a> for our newsletter to get the latest recipes!</p>
+                            <h3>
+                                Follow Us
+                            </h3>
+                            <ul class="social-icon">
+                                <li><a href="#"><img src="TikTok.png" alt=""></a></li>
+                                <li><a href="#"><img src="YouTube.png" alt=""></a></li>
+                                <li><a href="#"><img src="Instagram.png" alt=""></a></li>
+                                <li><a href="#"><img src="Twitter.png" alt=""></a></li>
+                                <li><a href="#"><img src="Facebook.png" alt=""></a></li>
+                            </ul>
+                            <ul class="tram-link">
+                                <li><a href="#">Terms of Services   </a>|</li>
+                                <li><a href="#">Privacy Policy   </a>|</li>
+                                <li><a href="#">Legal Stuff</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right-col">
+                        <div class="footer-link">
+                            <h2>Learn</h2>
+                            <ul>
+                                <li><a href="#">Breakfast</a></li>
+                                <li><a href="#">Lunch</a></li>
+                                <li><a href="#">Dinner</a></li>
+                                <li><a href="#">Dessert</a></li>
+                                <li><a href="#">Ingredients</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-right-col">
+                        <div class="footer-link">
+                            <h2>More from Tasty Tales</h2>
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                                <li><a href="#">Affiliate</a></li>
+                                <li><a href="#">Sign in</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="recipe">
-                    <img src="seasonal-recipe2.png" alt="Recipe 4">
-                    <p>Tamago Kake Gohan</p>
+                <div class="coppy-right-text">
+                    <p>© Tasty Tales 2023</p>
                 </div>
             </div>
-        </section>
-
-        <section class="tasty-tales">
-            <h2>Tasty Tales</h2>
-            <div class="recipe-container">
-                <div class="recipe">
-                    <img src="tasty-treats1.png" alt="Recipe 5">
-                    <p>Peach Buns</p>
-                </div>
-                <div class="recipe">
-                    <img src="tasty-treats2.png" alt="Recipe 6">
-                    <p>Takoyaki</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="newsletter">
-            <h2>Newsletter</h2>
-            <p>Subscribe to our newsletter for the latest updates and recipes!</p>
-            <form>
-                <input type="email" placeholder="Your Email">
-                <button>Subscribe</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Tasty Tales</p>
-    </footer>
-</body>
+        </footer>
+        <a href="#" class="scrolltotop"><i class="fas fa-angle-up"></i></a>    
+    </body>
 </html>
