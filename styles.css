@@ -77,7 +77,7 @@ label {
 body {
     font-family: 'Source Serif Pro';
     background-color: #FFFDF5;
-    font-size: 18px;
+    font-size: 30px;
     color: black;
 }
 
@@ -102,8 +102,9 @@ body {
     height: 300px;
     background-image: url(header-image.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     object-fit: cover;
+    background-position: center;
 }
 
 header {
@@ -136,7 +137,7 @@ nav a {
 
 .menu-item ul li a {
     color: rgba(0, 0, 0, 0.89);
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -146,7 +147,7 @@ nav a {
 }
 
 .menu-item ul li a:hover {
-    text-decoration: underline;
+    color: #8C52FF;
 }
 
 .drop_down a img {
@@ -187,13 +188,15 @@ nav a {
 .drop_down>ul>li>a {
     display: block;
     padding: 10px 20px;
-    font-size: 17px;
+    font-size: 25px;
 }
 
 .drop_down>ul>li>a:hover {
     background-color: #4F000B;
     color: #fff;
 }
+
+
 
 .right-menu {
     margin-left: 100px;
@@ -272,7 +275,7 @@ nav a {
 
 .mobile-menu-item ul li a {
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -313,7 +316,7 @@ nav a {
 
 .trending-left-item-inner {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px 30px;
 }
 
@@ -327,7 +330,7 @@ nav a {
 
 .trending-left-img-item p {
     color: #000;
-    font-size: 15px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -336,7 +339,7 @@ nav a {
 
 .trending-left-img-item h6 {
     color: #000;
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -359,7 +362,7 @@ nav a {
 .labl>input+div {
     cursor: pointer;
     border: 2px solid transparent;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -375,7 +378,7 @@ nav a {
 
 #trending-header h2 {
     color: #4F000B;
-    font-size: 40px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -404,17 +407,45 @@ nav a {
     line-height: normal;
     letter-spacing: 1.8px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .poll p {
     color: #000;
-    font-size: 18px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: center;
     margin-bottom: 7px;
+}
+
+#poll-result {
+    display: none; 
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+#poll-result h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+#poll-result p {
+    background-color: #e1e1e1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+ 
+}
+
+#poll-result.show {
+    opacity: 1;
 }
 
 .new-recipes-area {
@@ -442,7 +473,7 @@ nav a {
 
 .new-rec-title h2 {
     color: #4F000B;
-    font-size: 40px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -456,7 +487,7 @@ nav a {
 
 .new-rec-title ul li {
     color: #000;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -469,7 +500,7 @@ nav a {
 
 .new-rec-title ul li a {
     color: #8C52FF;
-    font-size: 15px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -488,7 +519,7 @@ nav a {
 
 .new-recipe-items h6 {
     color: #000;
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -498,7 +529,7 @@ nav a {
 
 .new-recipe-items p {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -508,7 +539,7 @@ nav a {
 
 .new-recipe-items span {
     color: #FFF;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
@@ -530,7 +561,7 @@ nav a {
 
 .new-rec-title2 h2 {
     color: #4F000B;
-    font-size: 40px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -544,7 +575,7 @@ nav a {
 
 .new-rec-title2 ul li {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -614,7 +645,7 @@ footer {
 
 .footer-left-item p {
     color: #000;
-    font-size: 18px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -627,7 +658,7 @@ footer {
 
 .footer-left-item h3 {
     color: #4F000B;
-    font-size: 30px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -651,7 +682,7 @@ footer {
 
 .footer-link h2 {
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -660,7 +691,7 @@ footer {
 
 .footer-link ul li a {
     color: #383838;
-    font-size: 18px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -687,7 +718,7 @@ footer {
 
 .tram-link li a {
     color: rgba(0, 0, 0, 0.60);
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -701,12 +732,85 @@ footer {
 
 .copy-right-text p {
     color: #000;
-    font-size: 15px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-align: right;
 }
+
+/* about me page */ 
+
+.about-story {
+ 
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-story h1 {
+    margin-top: 80px;
+    color: #4F000B;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.about-story p {
+    color: #000;
+    font-size: 23px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.about-us {
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+.about-us h1 {
+    color: #4F000B;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: flex-start;
+}
+
+.team-member img {
+    width: 400px;
+    height:  500px;
+
+    object-fit: cover;
+    margin-right: 50px;
+}
+
+.team-description {
+    flex: 1; 
+    text-align: left;
+}
+
+
+.team-description p {
+    color: #000;
+    font-size: 23px;
+    line-height: 1.5;
+}
+
+
+
+
+/* Additional styles and media queries can be added based on your design needs */
+
+
+
 
 /* 
 @media screen and (min-width: 2000px)  {
@@ -882,7 +986,7 @@ footer {
     .trending-left-img-item h6 {
         display: grid;
         color: #000;
-        font-size: 26px;
+        font-size: 32px;
     }
 
     .trending-left-img-item p {
@@ -899,7 +1003,7 @@ footer {
     }
     #trending-header h2 {
         color: #4F000B;
-        font-size: 25px;
+        font-size: 32px;
     }
   
     .new-rec-title {
@@ -1007,6 +1111,28 @@ footer {
     .f-logo {
         margin-top: -208px;
         padding-bottom: 0px;
+    }
+    .team-member {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center; 
+        margin-bottom: 0px;
+    }
+    .team-member img {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+        width: 100%;
+        height: 100%;
+    }
+    .about-us { 
+        margin-bottom: 10px;
+    }
+    .about-story {
+        margin-bottom: 0;
+    }
+    .team-description 
+    {
+        margin-bottom: 10px;
     }
 }
 

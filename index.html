@@ -20,18 +20,18 @@
                 <nav>
                     <div class="menu-item">
                         <ul class="left-menu">
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#">HOME</a></li>
                             <li class="drop_down">
-                                <a href="#">Recipes<img src="down-arrow.png" alt=""></a>
+                                <a href="#">RECIPES<img src="down-arrow.png" alt=""></a>
                                 <ul>
-                                    <li><a href="#">Latest</a></li>
-                                    <li><a href="#">Trending</a></li>
-                                    <li><a href="#">Seasonal</a></li>
-                                    <li><a href="#">Treats</a></li>
-                                    <li><a href="#">Drinks</a></li>
+                                    <li><a href="#">LATEST</a></li>
+                                    <li><a href="#">TRENDING</a></li>
+                                    <li><a href="#">SEASONAL</a></li>
+                                    <li><a href="#">TREATS</a></li>
+                                    <li><a href="#">DRINKS</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="about-me.html">ABOUT</a></li>
                         </ul>
                     </div>
                     <div class="logo">
@@ -39,11 +39,9 @@
                     </div>
                     <div class="menu-item">
                         <ul class="right-menu">
-                            <li><a href="#">Anime</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li class="search-bar">
-                                <input type="text" placeholder="What are you craving?">
-                            </li>
+                            <li><a href="#">ANIME</a></li>
+                            <li><a href="#">COMMUNITY</a></li>
+                            
                         </ul>
                     </div>
                     <div class="hamburger">
@@ -59,23 +57,23 @@
                     <ul>
                         <li><a href="#" id="m-active">Home</a></li>
                         <li>
-                            <a href="#">Recipes <span><img src="down-arrow.png" class="img-fluid" alt=""></span></a>
+                            <a href="#">RECIPES <span><img src="down-arrow.png" class="img-fluid" alt=""></span></a>
                             <ul class="sub-m-item">
-                                <li><a href="#">Latest</a></li>
-                                <li><a href="#">Trending</a></li>
-                                <li><a href="#">Seasonal</a></li>
-                                <li><a href="#">Treats</a></li>
-                                <li><a href="#">Drinks</a></li>
+                                <li><a href="#">LATEST</a></li>
+                                <li><a href="#">TRENDING</a></li>
+                                <li><a href="#">SEASONAL</a></li>
+                                <li><a href="#">TREATS</a></li>
+                                <li><a href="#">DRINKS</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="about-me.html">ABOUT</a>
                         </li>
                         <li>
-                            <a href="#">Anime</a>
+                            <a href="#">ANIME</a>
                         </li>
                         <li>
-                            <a href="#">Community</a>
+                            <a href="#">COMMUNITY</a>
                         </li>
                     </ul>
                 </div>
@@ -91,20 +89,26 @@
                         </div>
                         <div class="trending-left-item-inner">
                             <div class="trending-left-img-item">
-                                <img src="trending-recipe1.png" class="img-fluid" alt="Recipe 1">
-                                <p>Japanese Curry</p>
-                                <h6>Japanese Curry</h6>
+                                <a href="recipe1.html">
+                                    <img src="pork-anime.png" class="img-fluid" alt="Recipe 1">
+                                </a>
                             </div>
                             <div class="trending-left-img-item">
-                                <img src="trending-recipe2.png" class="img-fluid" alt="Recipe 2">
-                                <p>Oden</p>
-                                <h6>Oden</h6>
+                                <a href="recipe2.html">
+                                    <img src="Squirrel-Fish-Anime.png" class="img-fluid" alt="Recipe 2">
+                                </a>
                             </div>
                             <div class="trending-left-img-item">
-                                <img src="trending-recipe3.png" class="img-fluid" alt="Recipe 3">
-                                <p>Omurice</p>
-                                <h6>Omurice</h6>
+                                <a href="#"></a>
+                                    <img src="egg-anime.png" class="img-fluid" alt="Recipe 3">
+                                </a>
                             </div>
+                            <div class="trending-left-img-item">
+                                <a href="#"></a>
+                                    <img src="onigiri-anime.png" class="img-fluid" alt="Recipe 4">
+                                </a>
+                            </div>
+
                         </div>
                     </div>
                     <div class="trending-right">
@@ -113,16 +117,20 @@
                             <p>Will Hunter x Hunter ever come back?</p>
                             <div class="poll-inner">
                                 <img src="poll-image.png" alt="Poll Image">
-                                <form>
+                                <form id = "poll-form">
                                     <label class="labl">
-                                        <input type="radio" name="radioname" >
+                                        <input type="radio" name="radioname" value="Yes">
                                         <div>Yes! I believe!</div>
                                     </label>
                                     <label class="labl">
-                                        <input type="radio" name="radioname" value="another" />
+                                        <input type="radio" name="radioname" value="No" />
                                         <div>No, give up already...</div>
                                     </label>
+                             
                                 </form>
+                                <div id="poll-result">
+
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -249,7 +257,6 @@
                             <ul>
                                 <li><a href="#">Our Story</a></li>
                                 <li><a href="#">Contact Us</a></li>
-                                <li><a href="#">Affiliate</a></li>
                                 <li><a href="#">Affiliate</a></li>
                                 <li><a href="#">Sign in</a></li>
                             </ul>
